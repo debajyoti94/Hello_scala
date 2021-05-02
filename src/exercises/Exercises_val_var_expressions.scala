@@ -16,4 +16,6 @@ package object exercises  extends App{
     if (someValue) 239 else 986
   }
   // 239
+
+  // Exercises for Functions
 }
