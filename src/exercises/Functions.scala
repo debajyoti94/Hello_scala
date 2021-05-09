@@ -1,5 +1,7 @@
 package exercises
 
+import scala.annotation.tailrec
+
 object Functions extends App {
 
   /*
@@ -31,6 +33,7 @@ object Functions extends App {
 
   //4. Test if a number is prime
   def prime(n: Int): Boolean = {
+    @tailrec
     def checkDivisibility(x: Int): Boolean= {
       if (x <= 1) true
       else n % x != 0 && checkDivisibility(x-1)
